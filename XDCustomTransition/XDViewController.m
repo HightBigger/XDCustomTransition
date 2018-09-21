@@ -32,12 +32,10 @@
     
     XDPushHeadViewController *vc= [[XDPushHeadViewController alloc] init];
     
-    //设置出场方向
     CATransition* transition = [CATransition animation];
-    transition.type = kCATransitionMoveIn;
-    transition.subtype = kCATransitionFromTop;
+    transition.type = kCATransitionMoveIn;//根据需求自己设置
+    transition.subtype = kCATransitionFromTop;//根据需求自己设置
     [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-    
-    [self.navigationController pushViewController:vc animated:NO];
+    [self.navigationController pushViewController:vc animated:NO];//这里传NO，不然两个动画会叠加
 }
 @end

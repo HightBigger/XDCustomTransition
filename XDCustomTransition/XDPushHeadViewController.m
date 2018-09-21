@@ -35,12 +35,11 @@
 
 - (void)didClickPopBtn:(UIButton *)sender
 {
-    //设置出场方向(从下方推出去)
     CATransition* transition = [CATransition animation];
-    transition.type = kCATransitionReveal;
-    transition.subtype = kCATransitionFromBottom;
+    transition.type = kCATransitionReveal;//根据需求自己设置
+    transition.subtype = kCATransitionFromBottom;//根据需求自己设置
     [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:NO];//这里传NO，不然两个动画会叠加
     
 }
 
