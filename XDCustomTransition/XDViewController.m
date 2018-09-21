@@ -8,7 +8,7 @@
 
 #import "XDViewController.h"
 #import "XDWeChatManager.h"
-
+#import "XDPushHeadViewController.h"
 
 @interface XDViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *WeChatBtn;
@@ -27,4 +27,17 @@
     [[XDWeChatManager shareIntance] showWeChatViewChat];
 }
 
+- (IBAction)didClickPushBtn:(UIButton *)sender
+{
+    
+    XDPushHeadViewController *vc= [[XDPushHeadViewController alloc] init];
+    
+    //设置出场方向
+    CATransition* transition = [CATransition animation];
+    transition.type = kCATransitionMoveIn;
+    transition.subtype = kCATransitionFromTop;
+    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+    
+    [self.navigationController pushViewController:vc animated:NO];
+}
 @end

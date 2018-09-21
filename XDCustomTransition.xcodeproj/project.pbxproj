@@ -17,6 +17,7 @@
 		AD2899BB2154930900883C4C /* XDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B12154930900883C4C /* XDViewController.m */; };
 		AD2899BC2154930900883C4C /* XDWeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B32154930900883C4C /* XDWeChatManager.m */; };
 		AD2899BD2154930900883C4C /* XDWeChatTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B42154930900883C4C /* XDWeChatTransition.m */; };
+		AD2899C32154954300883C4C /* XDPushHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899C22154954300883C4C /* XDPushHeadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		AD2899B62154930900883C4C /* XDWeChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDWeChatManager.h; sourceTree = "<group>"; };
 		AD2899B72154930900883C4C /* XDWeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDWeChatViewController.h; sourceTree = "<group>"; };
 		AD2899B82154930900883C4C /* XDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDViewController.h; sourceTree = "<group>"; };
+		AD2899C12154954300883C4C /* XDPushHeadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDPushHeadViewController.h; sourceTree = "<group>"; };
+		AD2899C22154954300883C4C /* XDPushHeadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDPushHeadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				AD2899B12154930900883C4C /* XDViewController.m */,
 				AD2899B72154930900883C4C /* XDWeChatViewController.h */,
 				AD2899AD2154930900883C4C /* XDWeChatViewController.m */,
+				AD2899C12154954300883C4C /* XDPushHeadViewController.h */,
+				AD2899C22154954300883C4C /* XDPushHeadViewController.m */,
 				AD2899B22154930900883C4C /* XDWeChatTransition */,
 				AD2899AE2154930900883C4C /* XDCommon */,
 				AD28999D215492DC00883C4C /* Main.storyboard */,
@@ -133,6 +138,7 @@
 		AD28998C215492DC00883C4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XD;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = nationsky;
 				TargetAttributes = {
@@ -179,6 +185,7 @@
 			files = (
 				AD2899BA2154930900883C4C /* XDUtil.m in Sources */,
 				AD2899BC2154930900883C4C /* XDWeChatManager.m in Sources */,
+				AD2899C32154954300883C4C /* XDPushHeadViewController.m in Sources */,
 				AD2899BD2154930900883C4C /* XDWeChatTransition.m in Sources */,
 				AD2899BB2154930900883C4C /* XDViewController.m in Sources */,
 				AD2899A7215492DD00883C4C /* main.m in Sources */,

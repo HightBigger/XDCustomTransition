@@ -41,6 +41,9 @@
                                     <constraint firstAttribute="height" constant="30" id="9QA-GN-End"/>
                                 </constraints>
                                 <state key="normal" title="push方向改变"/>
+                                <connections>
+                                    <action selector="didClickPushBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isj-3j-XVZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n64-sr-oP1">
                                 <rect key="frame" x="132" y="444" width="111" height="30"/>
