@@ -85,11 +85,6 @@
     }
 }
 
-- (void)weChatViewMaximize
-{
-    [self presentMeetingVCWithTransitionType:TransitionMinAndMax completion:nil];
-}
-
 - (void)panMeetingView:(UIPanGestureRecognizer *)panGesture
 {
     CGPoint point = [panGesture locationInView:[UIApplication sharedApplication].delegate.window];
@@ -186,7 +181,7 @@
 {
     if (!_tapMaximizeGes)
     {
-        _tapMaximizeGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(weChatViewMaximize)];
+        _tapMaximizeGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showWeChatViewChat)];
     }
     return _tapMaximizeGes;
 }
