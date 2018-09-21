@@ -17,7 +17,10 @@
 		AD2899BB2154930900883C4C /* XDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B12154930900883C4C /* XDViewController.m */; };
 		AD2899BC2154930900883C4C /* XDWeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B32154930900883C4C /* XDWeChatManager.m */; };
 		AD2899BD2154930900883C4C /* XDWeChatTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899B42154930900883C4C /* XDWeChatTransition.m */; };
-		AD2899C32154954300883C4C /* XDPushHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899C22154954300883C4C /* XDPushHeadViewController.m */; };
+		AD2899C32154954300883C4C /* XDCATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899C22154954300883C4C /* XDCATransitionViewController.m */; };
+		AD2899C72154C6B200883C4C /* XDSNavTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899C52154C6B200883C4C /* XDSNavTransition.m */; };
+		AD2899CD2154C77700883C4C /* XDNavTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899CC2154C77700883C4C /* XDNavTransitionDelegate.m */; };
+		AD2899D02154C80600883C4C /* XDNavTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2899CF2154C80600883C4C /* XDNavTransitionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +42,14 @@
 		AD2899B62154930900883C4C /* XDWeChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDWeChatManager.h; sourceTree = "<group>"; };
 		AD2899B72154930900883C4C /* XDWeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDWeChatViewController.h; sourceTree = "<group>"; };
 		AD2899B82154930900883C4C /* XDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDViewController.h; sourceTree = "<group>"; };
-		AD2899C12154954300883C4C /* XDPushHeadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDPushHeadViewController.h; sourceTree = "<group>"; };
-		AD2899C22154954300883C4C /* XDPushHeadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDPushHeadViewController.m; sourceTree = "<group>"; };
+		AD2899C12154954300883C4C /* XDCATransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDCATransitionViewController.h; sourceTree = "<group>"; };
+		AD2899C22154954300883C4C /* XDCATransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDCATransitionViewController.m; sourceTree = "<group>"; };
+		AD2899C52154C6B200883C4C /* XDSNavTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSNavTransition.m; sourceTree = "<group>"; };
+		AD2899C62154C6B200883C4C /* XDSNavTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSNavTransition.h; sourceTree = "<group>"; };
+		AD2899CB2154C77700883C4C /* XDNavTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDNavTransitionDelegate.h; sourceTree = "<group>"; };
+		AD2899CC2154C77700883C4C /* XDNavTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDNavTransitionDelegate.m; sourceTree = "<group>"; };
+		AD2899CE2154C80600883C4C /* XDNavTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDNavTransitionViewController.h; sourceTree = "<group>"; };
+		AD2899CF2154C80600883C4C /* XDNavTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDNavTransitionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +88,12 @@
 				AD2899B12154930900883C4C /* XDViewController.m */,
 				AD2899B72154930900883C4C /* XDWeChatViewController.h */,
 				AD2899AD2154930900883C4C /* XDWeChatViewController.m */,
-				AD2899C12154954300883C4C /* XDPushHeadViewController.h */,
-				AD2899C22154954300883C4C /* XDPushHeadViewController.m */,
-				AD2899B22154930900883C4C /* XDWeChatTransition */,
+				AD2899C12154954300883C4C /* XDCATransitionViewController.h */,
+				AD2899C22154954300883C4C /* XDCATransitionViewController.m */,
+				AD2899CE2154C80600883C4C /* XDNavTransitionViewController.h */,
+				AD2899CF2154C80600883C4C /* XDNavTransitionViewController.m */,
+				AD2899C42154C67700883C4C /* XDPushTransition */,
+				AD2899B22154930900883C4C /* XDPresentTransition */,
 				AD2899AE2154930900883C4C /* XDCommon */,
 				AD28999D215492DC00883C4C /* Main.storyboard */,
 				AD2899A0215492DD00883C4C /* Assets.xcassets */,
@@ -101,7 +113,7 @@
 			path = XDCommon;
 			sourceTree = "<group>";
 		};
-		AD2899B22154930900883C4C /* XDWeChatTransition */ = {
+		AD2899B22154930900883C4C /* XDPresentTransition */ = {
 			isa = PBXGroup;
 			children = (
 				AD2899B62154930900883C4C /* XDWeChatManager.h */,
@@ -109,7 +121,18 @@
 				AD2899B52154930900883C4C /* XDWeChatTransition.h */,
 				AD2899B42154930900883C4C /* XDWeChatTransition.m */,
 			);
-			path = XDWeChatTransition;
+			path = XDPresentTransition;
+			sourceTree = "<group>";
+		};
+		AD2899C42154C67700883C4C /* XDPushTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AD2899C62154C6B200883C4C /* XDSNavTransition.h */,
+				AD2899C52154C6B200883C4C /* XDSNavTransition.m */,
+				AD2899CB2154C77700883C4C /* XDNavTransitionDelegate.h */,
+				AD2899CC2154C77700883C4C /* XDNavTransitionDelegate.m */,
+			);
+			path = XDPushTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,14 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2899D02154C80600883C4C /* XDNavTransitionViewController.m in Sources */,
 				AD2899BA2154930900883C4C /* XDUtil.m in Sources */,
 				AD2899BC2154930900883C4C /* XDWeChatManager.m in Sources */,
-				AD2899C32154954300883C4C /* XDPushHeadViewController.m in Sources */,
+				AD2899C32154954300883C4C /* XDCATransitionViewController.m in Sources */,
 				AD2899BD2154930900883C4C /* XDWeChatTransition.m in Sources */,
 				AD2899BB2154930900883C4C /* XDViewController.m in Sources */,
 				AD2899A7215492DD00883C4C /* main.m in Sources */,
+				AD2899C72154C6B200883C4C /* XDSNavTransition.m in Sources */,
 				AD2899B92154930900883C4C /* XDWeChatViewController.m in Sources */,
 				AD289999215492DC00883C4C /* AppDelegate.m in Sources */,
+				AD2899CD2154C77700883C4C /* XDNavTransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +361,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KU9D46A88B;
 				INFOPLIST_FILE = XDCustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nationsky.appnest.plus.XDCustomTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.xiaoda.customTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,11 +379,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KU9D46A88B;
 				INFOPLIST_FILE = XDCustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nationsky.appnest.plus.XDCustomTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.xiaoda.customTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

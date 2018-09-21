@@ -2,8 +2,8 @@
 //  XDWeChatManager.m
 //  XDCustomTransition
 //
-//  Created by chenyixing on 2018/9/20.
-//  Copyright © 2018年 nationsky. All rights reserved.
+//  Created by xiaoda on 2018/9/20.
+//  Copyright © 2018年 xiaoda. All rights reserved.
 //
 
 #import "XDWeChatManager.h"
@@ -77,11 +77,9 @@
     }
     else
     {
-        [self presentMeetingVCWithTransitionType:TransitionMinAndMax completion:^{
-            
-            [weakSelf.smallWindow removeFromSuperview];
-            
-        }];
+        [self.smallWindow removeFromSuperview];
+        
+        [self presentMeetingVCWithTransitionType:TransitionMinAndMax completion:nil];
     }
 }
 
@@ -171,7 +169,7 @@
         _smallWindow = [[UIView alloc]initWithFrame:self.lastSmallFrame];
         [_smallWindow addGestureRecognizer:self.tapMaximizeGes];
         [_smallWindow addGestureRecognizer:self.panGesture];
-        _smallWindow.backgroundColor = [UIColor grayColor];
+        _smallWindow.backgroundColor = [UIColor greenColor];
     }
     
     return _smallWindow;

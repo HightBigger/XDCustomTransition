@@ -1,25 +1,23 @@
 //
-//  XDPushHeadViewController.m
+//  XDCATransitionViewController.m
 //  XDCustomTransition
 //
-//  Created by chenyixing on 2018/9/21.
-//  Copyright © 2018年 nationsky. All rights reserved.
+//  Created by xiaoda on 2018/9/21.
+//  Copyright © 2018年 xiaoda. All rights reserved.
 //
 
-#import "XDPushHeadViewController.h"
+#import "XDCATransitionViewController.h"
 
-@interface XDPushHeadViewController ()
+@interface XDCATransitionViewController ()
 
 @end
 
-@implementation XDPushHeadViewController
+@implementation XDCATransitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController setNavigationBarHidden:YES];
-    
-    [self.view setBackgroundColor:[UIColor grayColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
     
